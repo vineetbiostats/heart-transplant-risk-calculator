@@ -6,7 +6,7 @@ from pathlib import Path
 
 st.set_page_config(page_title='Heart Transplant Risk Calculator', page_icon='♥', layout='wide')
 ROOT=Path(__file__).parent
-DATA=pd.read_csv(ROOT/'data'/'HeartScore_Risk_Calculator_95CI.csv')
+DATA=pd.read_csv(ROOT/'HeartScore_Risk_Calculator_95CI.csv')
 BASE={1:0.96748726,5:0.92018142,10:0.84173748,15:0.72456804}
 BETA=0.03843341
 
